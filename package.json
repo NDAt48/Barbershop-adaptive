@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/NDAt48/Barbershop-adaptive/issues"
   },
-  "homepage": "https://github.com/NDAt48/Barbershop-adaptive#readme"
+  "homepage": "https://github.com/NDAt48/Barbershop-adaptive#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^1.4.0"
+  }
 }
