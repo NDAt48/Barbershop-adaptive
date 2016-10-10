@@ -1,0 +1,19 @@
+{
+  "name": "barbershop-adaptive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NDAt48/Barbershop-adaptive.git"
+  },
+  "author": "Denis Narykov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NDAt48/Barbershop-adaptive/issues"
+  },
+  "homepage": "https://github.com/NDAt48/Barbershop-adaptive#readme"
+}
