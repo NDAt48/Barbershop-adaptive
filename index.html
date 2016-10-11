@@ -15,7 +15,7 @@
         <img src="img/logotype-mobile.svg" width="230" height="85" alt="Барбершоп Бородинский">
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toogle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
             <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
@@ -115,7 +115,7 @@
           <div class="reviews__items">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__auhor_foto">
-                <img src="img/travis-pic.jpg width="50" height="30" alt="Фото Трэвиса Баркера">
+                <img src="#" width="50" height="30" alt="Фото Трэвиса Баркера">
               </div>
               <cite class="reviews__auhor-name">Трэвис Баркер</cite>
               <p> Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
@@ -151,6 +151,21 @@
         </p>
       </div>
     </footer>
-    <script></script>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
