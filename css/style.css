@@ -26,19 +26,19 @@ img {
   font-weight: normal;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("fonts/PTSansNarrow.wolf2") format("wolf2"), url("fonts/PTSansNarrow.wolf") format("wolf");
+  src: url("../fonts/PTSansNarrow.wolf2") format("wolf2"), url("../fonts/PTSansNarrow.wolf") format("wolf");
 }
 @font-face {
   font-weight: 700;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("fonts/PTSansNarrowBold.wolf2") format("wolf2"), url("fonts/PTSansNarrowBold.wolf") format("wolf");
+  src: url("../fonts/PTSansNarrowBold.wolf2") format("wolf2"), url("../fonts/PTSansNarrowBold.wolf") format("wolf");
 }
 .page-header__logo {
   height: 85px;
   text-align: center;
 }
-.page-hedaer__logo img {
+.page-header__logo img {
   width: 230px;
   height: 85px;
 }
