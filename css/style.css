@@ -2,7 +2,7 @@
 body {
   font-size: 18px;
   line-height: 27px;
-  font-family: Arial, sans-serif;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
   color: #f7f4f1;
   font-style: normal;
   background-color: #292929;
@@ -11,11 +11,35 @@ img {
   max-width: 100%;
   height: auto;
 }
-.page-header {
-  min-height: 395px;
-  /*Временно для сетки*/
+.visually-hidden {
+  /*Прячем тексты их нельзя писать display:none, так как читабельность*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("fonts/PTSansNarrow.wolf2") format("wolf2"), url("fonts/PTSansNarrow.wolf") format("wolf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("fonts/PTSansNarrowBold.wolf2") format("wolf2"), url("fonts/PTSansNarrowBold.wolf") format("wolf");
 }
 .page-header__logo {
+  height: 85px;
+  text-align: center;
+}
+.page-hedaer__logo img {
+  width: 230px;
   height: 85px;
 }
 @media (min-width: 768px) {
@@ -24,12 +48,17 @@ img {
     min-height: 70px;
     /*минимальная высота содержания*/
     padding-bottom: 400px;
+    background-color: #000000;
   }
   .page-header__logo {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 400px;
+    background-color: #000000;
+    background-image: url("img/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center -9px;
   }
 }
 @media (min-width: 1200px) {
@@ -38,6 +67,11 @@ img {
   }
   .page-header__logo {
     height: 648px;
+    background-position: center 0px;
+    background-size: cover;
+  }
+  .page-header__logo img {
+    bottom: 438px;
   }
 }
 .main-nav {
