@@ -26,13 +26,13 @@ img {
   font-weight: normal;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("../fonts/PTSansNarrow.wolf2") format("wolf2"), url("../fonts/PTSansNarrow.wolf") format("wolf");
+  src: url("../fonts/PTSansNarrow.wolf2") format("wolf2"), url("../fonts/PTSansNarrow.wolf") format("wolf"), url("../fonts/PTSansNarrow.ttf") format("truetype");
 }
 @font-face {
   font-weight: 700;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("../fonts/PTSansNarrowBold.wolf2") format("wolf2"), url("../fonts/PTSansNarrowBold.wolf") format("wolf");
+  src: url("../fonts/PTSansNarrowBold.wolf2") format("wolf2"), url("../fonts/PTSansNarrowBold.wolf") format("wolf"), url("../fonts/PTSansNarrowBold.ttf") format("truetype");
 }
 .page-header__logo {
   height: 85px;
