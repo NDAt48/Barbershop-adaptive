@@ -668,6 +668,7 @@ img {
   list-style: none;
 }
 .advantages__items {
+  position: relative;
   min-height: 145px;
   /*Временно для сетки*/
   margin-bottom: 23px;
@@ -679,10 +680,12 @@ img {
 }
 .advantages__item-title {
   display: block;
-  margin-bottom: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -692,15 +695,16 @@ img {
 .advantages__item::before {
   content: "";
   position: absolute;
-  overflow: hidden;
-  top: 65px;
+  top: 0px;
   right: 50%;
+  transform: translateX(50%);
 }
-.advantages__item {
-  background-size: 95px auto;
-}
-.advantages__item--fast {
+.advantages__item--fast::before {
+  width: 95px;
+  height: 95px;
   background-image: url("../img/advantage-1-illustration.svg");
+  background-size: 95px auto;
+  background-position: 50% 50%;
 }
 .advantages__item-description {
   font-size: 20px;
