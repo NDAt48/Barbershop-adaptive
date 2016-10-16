@@ -677,6 +677,16 @@ img {
 .advantages__item:nth-child(n+2) {
   display: none;
 }
+.advantages__item-title {
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.advantages__item-title p {
+  margin: 0;
+}
 @media (min-width: 768px) {
   .advantages__wrapper {
     padding-top: 42px;
