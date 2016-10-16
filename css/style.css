@@ -678,14 +678,35 @@ img {
   display: none;
 }
 .advantages__item-title {
+  display: block;
   margin-bottom: 25px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 .advantages__item-title p {
   margin: 0;
+}
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  top: 65px;
+  right: 50%;
+}
+.advantages__item {
+  background-size: 95px auto;
+}
+.advantages__item--fast {
+  background-image: url("../img/advantage-1-illustration.svg");
+}
+.advantages__item-description {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: normal;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .advantages__wrapper {
@@ -825,4 +846,10 @@ img {
   .news__item:nth-child(n+3) {
     display: inline-block;
   }
+}
+.slider {
+  position: relative;
+}
+.slider__input {
+  display: none;
 }
